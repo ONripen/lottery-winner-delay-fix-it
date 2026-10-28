@@ -1,21 +1,10 @@
-            setTimeout(() => {
-               console.log('String project')
-            },1000)
+            const myWinner = ['Nripen Biswas','Kakoly Biswas',
+            'Shamoly Biswas','Shibani Biswas','Nupur Biswas'];
 
-            setTimeout(() => {
-               console.log('Title: Fix my lottery winner delay bug fix.')
-            },3000)
-
-             setTimeout(() => {
-               console.log('lottery winner showing together. need delay. fix it.')
-            },4000)
-
-             setTimeout(() => {
-               console.log('for loop setTime out not working. help')
-            },5000)
-
-             setTimeout(() => {
-               console.log('Fix this Bug. How much?')
-            },5000)
-
-
+            let box=document.getElementById('winners');
+            for(let i=0; i<myWinner.length; i++){
+           
+           setTimeout(function() {
+              box.innerHTML += '<p>' + myWinner[i] + ' - ' + i + '</p>';
+            },i*1000)
+          }
